@@ -1,13 +1,66 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 100px;   /* para mientras tanto*/
+  min-height: 100vh;
+  
+  
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-input{
+  padding: 25px;
+  width: 550px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+.form-input-boton{
+  padding: 25px 15px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: rgba(65, 136, 230, 0.671);
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  
+}
+.lista-texto{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+.lista-checkbox{
+  width: 30px;
+  height: 30px;
+  border-radius: 35px;
+}
+.lista-delete{
+  background-color: black;
+  padding: 20px 35px;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.lista{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }

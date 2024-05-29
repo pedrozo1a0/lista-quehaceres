@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import { Form } from './components/Form';
+import { Lista } from './components/Lista';
 
 function App() {
+
+  const [listaTareas, setListaTareas]= useState(Array(1).fill("Get MERN black belt"))
+
+  
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <Form   
+                listaTareas={listaTareas}
+                setListaTareas={setListaTareas}
+                />
+  {listaTareas.map((texto, index)=> <Lista key={index} index={index} texto={texto} listaTareas={listaTareas} setListaTareas={setListaTareas}  />)}
+  </>
   );
 }
 
