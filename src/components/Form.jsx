@@ -13,6 +13,7 @@ export const Form= ({listaTareas, setListaTareas})=>{
     
     return(
         <form onSubmit={agregarALista} className="form" >
+            <p>hello</p>
             <input className="form-input" type="text" value={textoTarea}  onChange={(e)=>setTextoTarea(e.target.value)}  />
             <button className="form-input-boton">Add</button>
         </form>
